@@ -179,17 +179,7 @@ describe('sumarLikesDeUsuario(user)', function() {
     const user = {
       usernombre: 'Jhon Doe',
       password: 'JavaScript es genial!',
-      posts: [
-        {
-          id: '1',
-          title: 'Aventuras en JS!',
-          likes: 10
-        },
-        {
-          id: '2',
-          title: 'Soy Henry!',
-          likes: 100
-        },
+      posts: [{id: '1', title: 'Aventuras en JS!', likes: 10},{ id: '2', title: 'Soy Henry!', likes: 10,},
         {
           id: '3',
           title: 'Qué es un JavaScript?',
