@@ -128,13 +128,26 @@ function pasarUsuarioAPremium(usuarios) {
  
 
 function sumarLikesDeUsuario(usuario) {
- 
-
-    for (var n=0; n < usuario.posts['likes'].length; n++){
-      var sumLikes = 0;
-      sumLikes += usuario.posts[n].likes;
-    }
-    return sumLikes;
+  /*  var usuario = {
+     posts: [{
+          likes: 10,
+          id: 'con La mas LoK'
+     },
+     {
+       likes: 20,
+       id:'Verde que te quiero Verde'
+     },
+     {
+      like: 30,
+      id: 'Summer in PotreroGaray'
+     }],
+   }, */
+    var sumLikes = 0;
+   for (var n=0; n < usuario.posts['likes'].length; n++){
+    var sumLikes = 0;
+    sumLikes += usuario.posts[n].likes;
+  }
+  return sumLikes;
 }
 
 function agregarMetodoCalculoDescuento(producto) {

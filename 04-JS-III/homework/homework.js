@@ -116,12 +116,15 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  //var arreglo = [1,2,3]
   var prom  = 0;
   var suma  = 0;
+  var contador = 0;
   for(var n = 0; n < resultadosTest.length; n++){
-    suma = suma + resultadosTest[n];
+    suma = suma + resultadosTest[n]; 
+    contador++ 
   }
-  prom = suma / resultadosTest.length;
+  prom = suma / contador;
   return prom;
 }
 
@@ -175,4 +178,5 @@ module.exports = {
   numeroMasGrande,
   multiplicarArgumentos,
 };
+
 
